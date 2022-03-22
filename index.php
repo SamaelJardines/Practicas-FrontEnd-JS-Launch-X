@@ -1,0 +1,1 @@
+<?php include_once("Practicas-FrontEnd 4/html/pokedex.html"); ?>

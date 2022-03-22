@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="Practicas-FrontEnd 4/css/pokedex.css">
+    
+</head>
+<body>
+
+    <div class="pokedex1">
+        <div class="pokedex2">
+            <h1 class="marcaSam">By: SamaelJardines</h1>
+            <div class="camara1">
+                <div class="camara2">
+                    <div class="camara3">
+                        <div class="camara4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rojo1">
+                <div class="rojo2">
+                    <div class="rojo3">
+                        <div class="rojo4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="amarillo1">
+                <div class="amarillo2">
+                    <div class="amarillo3">
+                        <div class="amarillo4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="amarillo1-1">
+                <div class="amarillo2-1">
+                    <div class="amarillo3-1">
+                        <div class="amarillo4-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pokedex3">
+                <div class="pokedex4">
+                    <div class="pokedex5">
+                        <div class="fondoBlanco"><p class="pokeNumero" id="pokeNumero"></p></div>
+                        <img class="fondoNegro" src="Practicas-FrontEnd 4/images/fondoNegro.jpg" alt="Pokemon" id="pokeImg">
+
+                        <div class="movimientos1">
+                            <p class="" id="pokeMov1"></p>
+                            <p class="" id="pokeMov2"></p>
+                            <p class="" id="pokeMov3"></p>
+                            <p class="" id="pokeMov4"></p> 
+                            <p class="" id="pokeMov5"></p>
+                            <p class="" id="pokeMov6"></p>
+                        </div>
+
+                        <div class="movimientos2">
+                            <p class="" id="pokeMov7"></p>
+                            <p class="" id="pokeMov8"></p>
+                            <p class="" id="pokeMov9"></p>
+                            <p class="" id="pokeMov10"></p> 
+                            <p class="" id="pokeMov11"></p>
+                            <p class="" id="pokeMov12"></p>
+                        </div>
+
+                        <input class="buscar" type="text" placeholder="pikachu" id="pokeName" name="pokeName">
+
+                        <button class="encenderBoton" onclick="encenderPokedex()">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-power" width="18" height="18" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M7 6a7.75 7.75 0 1 0 10 0" />
+                            <line x1="12" y1="4" x2="12" y2="12" />
+                          </svg>
+                        </button>
+
+                        <div class="boton1-4"></div>
+                        <div class="boton2-4"></div>
+
+                        <div class="cuadrado">
+                            <div class="circulo">
+                            </div>
+                        </div>
+
+                        <button class="subirBoton" onclick="subirPokemon()">ʌ</button>
+                        <button class="bajarBoton" onclick="bajarPokemon()">v</button>
+                        <button class="izqBoton1" onclick="izqPokemon()"><</button>
+                        <button class="derBoton1" onclick="derPokemon()">></button>
+                        <button class="buscarBoton" onclick="fetchPokemon()">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pokedex6">
+            <div class="pokedex7">
+                <div class="pokedex8">
+                    <div class="estadisticas1">
+                        <div class="pokeTipo">
+                        <p class="tipo">TIPO:
+                            <p class="" id="pokeType">
+                            </p>
+                        </p>
+                        </div>
+
+                        <div class="pokeFraqueza">
+                        <p class="fraqueza">FRAQUEZA:
+                            <p class="" id="pokeVul1"></p>
+                            <p class="" id="pokeVul2"></p>
+                            <p class="" id="pokeVul3"></p>
+                            <p class="" id="pokeVul4"></p>
+                            <p class="" id="pokeVul5"></p>
+                        </p>
+                        </div>
+
+                        <p class="hpStats" id="hpStats">#</p>
+                        <p class="attackStats" id="attackStats">#</p>
+                        <p class="defenseStats" id="defenseStats">#</p>
+                        <p class="special-attackStats" id="specialAttackStats">#</p>
+                        <p class="special-defenseStats" id="specialDefenseStats">#</p>
+                        <p class="speedStats" id="speedStats">#</p>
+
+                        <img class="hpImg" src="Practicas-FrontEnd 4/images/raya0.PNG" id="hp">
+                        <img class="attackImg" src="Practicas-FrontEnd 4/images/raya0.PNG" id="attack">
+                        <img class="defenseImg" src="Practicas-FrontEnd 4/images/raya0.PNG" id="defense">
+                        <img class="special-attackImg" src="Practicas-FrontEnd 4/images/raya0.PNG" id="special-attack">
+                        <img class="special-defenseImg" src="Practicas-FrontEnd 4/images/raya0.PNG" id="special-defense">
+                        <img class="speedImg" src="Practicas-FrontEnd 4/images/raya0.PNG" id="speed">
+            
+                        <p class="pokeStats" id="pokeStat"></p>
+                    </div>
+
+                    <div class="boton1">
+                        <div class="boton2"></div>
+                        <div class="boton3"></div>
+                        <div class="boton4"></div>
+                        <div class="boton5"></div>
+                        <div class="boton6"></div>
+                        <div class="boton7"></div>
+                        <div class="boton8"></div>
+                        <div class="boton9"></div>
+                        <div class="boton10"></div>
+                        <div class="boton11"></div>
+                    </div>
+
+                    <div class="boton1-2"></div>
+                    <div class="boton2-2"></div>
+
+                    <div class="boton1-3">
+                        <div class="boton2-3"></div>
+                        <div class="boton3-3"></div>
+                    </div>
+
+                    <div class="mostaza1">
+                        <div class="mostaza2">
+                            <div class="mostaza3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="estadisticas2">
+                        <p class="pokeAltura" id="pokeAltura">ALTURA:
+                        </p>
+                    </div>
+
+                    <div class="estadisticas3">
+                        <p class="pokePeso" id="pokePeso">PESO:
+                        </p>
+                    </div>
+
+                    <div class="pokedex9">
+                        <div class="pokedex10"></div>
+                        <div class="pokedex11"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="" id="numMov"></p>
+
+</body>
+<footer>
+    <script src="Practicas-FrontEnd 4/js/pokedex.js"></script>
+</footer>
+</html>
